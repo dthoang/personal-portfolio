@@ -1,0 +1,19 @@
+#signature {
+	background-color: gray;
+}
+
+h1 {
+	text-align: center;
+}
+
+/*#header {
+	text-align: center;
+}*/
+
+img {
+	width: 100%
+}
+
+#projectDisplay {
+	margin: 1em;
+}

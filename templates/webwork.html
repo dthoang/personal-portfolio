@@ -1,3 +1,12 @@
-<div>
-	<p>{{testing}}</p>
+<div ng-controller="myCtrl">
+    <div id="projectDisplay" ng-repeat="data in myData" class="container">
+    	<div class="col-md-3">
+        	<img src="{{data.Screenshot}}" ng-click="{{data.name}}">
+    	</div>
+    	<div class="col-md-9">
+	        <h2>{{data.Project}}</h2>
+	        <p>{{data.Description}}</p>
+	        <p><a href="{{data.URL}}">Click and experience the webpage!</a></p>
+    	</div>
+    </div>
 </div>
