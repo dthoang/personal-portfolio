@@ -1,5 +1,6 @@
 <div ng-controller="artCtrl">
-    <div ng-repeat="data in artData" class="container">
-    	<img src="{{thumbnail}}">
+    <div ng-repeat="data in artData">
+    	<img src="{{data.image}}">
+    	<p>{{data.title}}</p>
     </div>
 </div>

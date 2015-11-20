@@ -1,14 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
+
+body {
+	font-family: "Playfair Display", "serif";
+}
+
 #signature {
 	background-color: gray;
 }
 
 h1 {
 	text-align: center;
+	font-family: "Josefin Sans", "Helvetica", "sans-serif";
 }
 
-/*#header {
-	text-align: center;
-}*/
+h2 {
+	font-family: "Josefin Sans", "Helvetica", "sans-serif";
+	font-weight: 700
+}
 
 img {
 	width: 100%
@@ -16,6 +25,31 @@ img {
 
 #projectDisplay {
 	margin: 1em;
+}
+
+/* Navigation Bar */
+nav.navbar-default {
+	background-color: #181C22;
+	display: inline;
+	font-family: "Josefin Sans", "serif";
+	font-weight: 700;
+}
+
+nav ul a {
+	margin-left: 15px;
+	font-size: 16px;
+	padding: 0.5em;
+}
+
+nav a:hover{
+	text-decoration: none;
+	color: #D87E28;
+	fill: #D87E28;
+}
+
+#nameLogo {
+	float: right;
+	padding-right: 2em;
 }
 
 /*Josefin San play fair*/
