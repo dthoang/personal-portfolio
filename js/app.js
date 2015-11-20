@@ -26,25 +26,9 @@ myApp.config(function($stateProvider){
 		})
 })
 
-// .controller('webCtrl', function($scope, $http){
-// 	$http.get('json/portfolio_webdev.json').success(function(response){
-// 		$scope.webData = response
-// 	})
-
-// })
-
-// .controller('artCtrl', function($scope, $http){
-// 	$http.get('json/portfolio_webdev.json').success(function(response){
-// 		$scope.webData = response
-// 	})
-
-// })
-
-
 // Home page controller--handles data for the home page
 .controller('homeCtrl', function($scope){
 	$scope.introduction = "Hi, I'm Daniel Hoang! Please to meet you." //REMOVE THIS LATER
-	$scope.mood = "alright" //this too
 })
 
 // Web portfolio controller--handles data for the web portfolio page

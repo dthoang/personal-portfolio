@@ -5,10 +5,7 @@ body {
 	font-family: "Playfair Display", "serif";
 }
 
-#signature {
-	background-color: gray;
-}
-
+/* Header stylings */
 h1 {
 	text-align: center;
 	font-family: "Josefin Sans", "Helvetica", "sans-serif";
@@ -19,12 +16,17 @@ h2 {
 	font-weight: 700
 }
 
-img {
-	width: 100%
+#artThumbs {
+	width: 55%;
 }
 
+/* Webwork Styling */
 #projectDisplay {
 	margin: 1em;
+}
+
+#webThumbs {
+	width: 100%;
 }
 
 /* Navigation Bar */
@@ -51,5 +53,3 @@ nav a:hover{
 	float: right;
 	padding-right: 2em;
 }
-
-/*Josefin San play fair*/

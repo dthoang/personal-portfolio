@@ -1,7 +1,7 @@
 <div ng-controller="webCtrl">
     <div id="projectDisplay" ng-repeat="data in webData" class="container">
     	<div class="col-md-3">
-        	<a href="#" ng-click="showDetails = ! showDetails"><img src="{{data.Screenshot}}"></a>
+        	<a href="#" ng-click="showDetails = ! showDetails"><img id="webThumbs" src="{{data.Screenshot}}"></a>
     	</div>
     	<div class="col-md-9" ng-show="showDetails">
 	        <h2>{{data.Project}}</h2>
