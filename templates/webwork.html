@@ -1,12 +1,16 @@
 <div ng-controller="myCtrl">
     <div id="projectDisplay" ng-repeat="data in myData" class="container">
     	<div class="col-md-3">
-        	<img src="{{data.Screenshot}}" ng-click="{{data.name}}">
+        	<a href="#" ng-click="showDetails = ! showDetails"><img src="{{data.Screenshot}}"></a>
     	</div>
-    	<div class="col-md-9">
+    	<div class="col-md-9" ng-show="showDetails">
 	        <h2>{{data.Project}}</h2>
 	        <p>{{data.Description}}</p>
 	        <p><a href="{{data.URL}}">Click and experience the webpage!</a></p>
     	</div>
     </div>
 </div>
+
+
+<!-- http://stackoverflow.com/questions/16660826/show-hidden-div-on-ng-click-within-ng-repeat
+    How are they getting it to show?! -->
