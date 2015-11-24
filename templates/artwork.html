@@ -1,6 +1,20 @@
-<div ng-controller="artCtrl">
+<div ng-controller="artCtrl" class="container">
+
     <div ng-repeat="data in artData">
-    	<img id="artThumbs" src="{{data.thumbnail}}">
-    	<p>{{data.title}}</p>
+    	<div class="col-md-3"> 
+    		<a ng-click="artView(data)">
+    			<img id="artThumbs" src='{{data.thumbnail}}'/>
+    		</a>
+    	</div>
+    </div>
+    <div class="row">
+    	<!-- Displays artwork image -->
+    	<div class="pictureView" class="col-md-9">
+
+    	</div>
+    	<!-- Displays art information -->
+    	<div class="information" class="col-md-3">
+
+    	</div>
     </div>
 </div>

@@ -33,9 +33,24 @@ myApp.config(function($stateProvider){
 
 // Web portfolio controller--handles data for the web portfolio page
 .controller('webCtrl', function($scope, $http){
+	// Gets data containing artwork information
 	$http.get('json/portfolio_webdev.json').success(function(response){
 		$scope.webData = response
 	})
+
+	// Selects artwork data for viewing
+	$scope.artView = function(response) {
+		$('.pictureView').empty();
+		$('.information').empty();
+		var title = response.title;
+				console.log('title');
+		var date = response.date;
+		var medium = response.medium;
+		var dimensions = response.dimensions;
+		var image = response.image;
+		$('.pictureView').append('<img src ="'+ image +'" /></a>');
+		$('.information').append('<p>' + title + '</p> <p>' + date + '</p> <p>' + medium + '</p> <p>' + dimensions + '</p>');
+	}
 })
 
 // Artwork page controller--handles data for the art portfolio page

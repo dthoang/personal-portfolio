@@ -5,6 +5,20 @@ body {
 	font-family: "Playfair Display", "serif";
 }
 
+ul a {
+	color: #3D3D3D;
+}
+
+a:link img {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+a:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
 /* Header stylings */
 h1 {
 	text-align: center;
@@ -16,8 +30,19 @@ h2 {
 	font-weight: 700
 }
 
+/* Home page styling */
+#homepage {
+	text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 12.5em;
+}
+
+/* Artwork page styling */
 #artThumbs {
-	width: 55%;
+	width: 100%;
 }
 
 /* Webwork Styling */
@@ -30,11 +55,16 @@ h2 {
 }
 
 /* Navigation Bar */
+
 nav.navbar-default {
-	background-color: #181C22;
-	display: inline;
+	background-color: #FFE01B;
 	font-family: "Josefin Sans", "serif";
 	font-weight: 700;
+}
+
+nav ul{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 nav ul a {
@@ -43,13 +73,24 @@ nav ul a {
 	padding: 0.5em;
 }
 
-nav a:hover{
-	text-decoration: none;
-	color: #D87E28;
-	fill: #D87E28;
+ul a:active {
+	color: white;
+	text-decoration: underline;
+}
+
+ul a:hover {
+	color: white;
+	text-decoration: underline;
 }
 
 #nameLogo {
 	float: right;
-	padding-right: 2em;
+	padding-right: 5em;
+}
+
+/* For screens larger than 768px wide */
+@media screen and (min-width: 768px) {
+	#artThumbs {
+		width: 100%;
+	}
 }
