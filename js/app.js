@@ -55,7 +55,7 @@ myApp.config(function($stateProvider){
 		var medium = response.medium;
 		var dimensions = response.dimensions;
 		var image = response.image;
-		$('.pictureView').append('<img src ="'+ image +'" /></a>');
+		$('.pictureView').append('<img src ="artPortfolio/'+ image +'" /></a>');
 		$('.information').append('<p>' + title + '</p> <p>' + date + '</p> <p>' + medium + '</p> <p>' + dimensions + '</p>');
 	}
 })
