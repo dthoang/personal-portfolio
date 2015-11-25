@@ -41,7 +41,15 @@ h2 {
 }
 
 /* Artwork page styling */
+#viewSpace div {
+	padding-top: 5em;
+}
+
 #artThumbs {
+	width: 100%;
+}
+
+.pictureView img {
 	width: 100%;
 }
 
@@ -92,5 +100,9 @@ ul a:hover {
 @media screen and (min-width: 768px) {
 	#artThumbs {
 		width: 100%;
+	}
+
+	.pictureView img {
+	width: 80%;
 	}
 }

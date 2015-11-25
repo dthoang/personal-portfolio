@@ -37,6 +37,13 @@ myApp.config(function($stateProvider){
 	$http.get('json/portfolio_webdev.json').success(function(response){
 		$scope.webData = response
 	})
+})
+
+// Artwork page controller--handles data for the art portfolio page
+.controller('artCtrl', function($scope, $http){
+	$http.get('json/portfolio_artwork.json').success(function(response){
+		$scope.artData = response
+	})
 
 	// Selects artwork data for viewing
 	$scope.artView = function(response) {
@@ -51,13 +58,6 @@ myApp.config(function($stateProvider){
 		$('.pictureView').append('<img src ="'+ image +'" /></a>');
 		$('.information').append('<p>' + title + '</p> <p>' + date + '</p> <p>' + medium + '</p> <p>' + dimensions + '</p>');
 	}
-})
-
-// Artwork page controller--handles data for the art portfolio page
-.controller('artCtrl', function($scope, $http){
-	$http.get('json/portfolio_artwork.json').success(function(response){
-		$scope.artData = response
-	})
 })
 
 // Contact page controller--handles data for the contact info page
