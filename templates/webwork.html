@@ -1,9 +1,10 @@
 <div ng-controller="webCtrl">
-    <div id="projectDisplay" ng-repeat="data in webData" class="container">
+    <!-- Display all webwork -->
+    <div id="projectDisplay" ng-repeat="data in webData" class="row">
     	<div class="col-md-3">
-        	<a href="#" ng-click="showDetails = ! showDetails"><img id="webThumbs" src="{{data.Screenshot}}"></a>
+        	<a href="{{data.URL}}"><img id="webThumbs" src="{{data.Screenshot}}"></a>
     	</div>
-    	<div class="col-md-9" ng-show="showDetails">
+    	<div class="col-md-9">
 	        <h2>{{data.Project}}</h2>
 	        <p>{{data.Description}}</p>
 	        <p><a href="{{data.URL}}">Live demo here!</a></p>

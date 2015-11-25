@@ -5,7 +5,7 @@ var myApp = angular.module('myApp', ['ui.router'])
 myApp.config(function($stateProvider){
 	$stateProvider
 		.state('home', {
-		url: '/home',
+		url: "",
 		templateUrl: 'templates/home.html',
 		controller: 'homeCtrl',
 		})
@@ -28,7 +28,7 @@ myApp.config(function($stateProvider){
 
 // Home page controller--handles data for the home page
 .controller('homeCtrl', function($scope){
-	$scope.introduction = "Hi, I'm Daniel Hoang! Please to meet you." //REMOVE THIS LATER
+
 })
 
 // Web portfolio controller--handles data for the web portfolio page
@@ -62,6 +62,6 @@ myApp.config(function($stateProvider){
 
 // Contact page controller--handles data for the contact info page
 .controller('contactCtrl', function($scope){
-	$scope.greeting = "hello!"
+
 })
 

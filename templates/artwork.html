@@ -1,5 +1,10 @@
 <div ng-controller="artCtrl" class="container">
-
+    <div id="statement">
+        <h1>What is Daniel?</h1>
+        <p>I explore the intersection between identity and environment. I'm a (proud) Asian American and I exist so through my art.</p>
+        <hr>
+    </div>
+    <!-- Select art piece -->
     <div ng-repeat="data in artData">
     	<div class="col-md-2"> 
     		<a ng-click="artView(data)">
